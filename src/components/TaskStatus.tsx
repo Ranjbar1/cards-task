@@ -27,7 +27,7 @@ const TaskStatus = ({ status }: { status: string }) => {
           <Chip
             label="New"
             sx={{
-              bgcolor: green[300],
+              bgcolor: green[400],
               padding: "0",
               height: "20px",
               color: "white",

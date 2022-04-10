@@ -10,10 +10,10 @@ const TaskDetaile = ({ attendets }: { attendets: number }) => {
         justifyContent="space-around"
         paddingTop="15px"
       >
-        <Grid item>
+        <Grid item sm={5}>
           <DetailDate></DetailDate>
         </Grid>
-        <Grid item>
+        <Grid item sm={7}>
           <Avatars attendets={attendets}></Avatars>
         </Grid>
       </Grid>

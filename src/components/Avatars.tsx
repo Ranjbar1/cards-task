@@ -3,8 +3,6 @@ import { ModeEditOutline } from "@mui/icons-material";
 import { blue } from "@mui/material/colors";
 
 const AvatarStyle = {
-  width: 20,
-  height: 20,
   bgcolor: blue[200],
   fontSize: "12px",
   fontWeight: "lighter",
