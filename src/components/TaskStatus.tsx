@@ -1,8 +1,7 @@
-import * as React from "react";
-import { Grid, Avatar, Chip, Container, Badge } from "@mui/material";
-import { green } from "@mui/material/colors";
-
-const TaskStatus = () => {
+import { Grid, Avatar, Chip, Container } from "@mui/material";
+import { green, red } from "@mui/material/colors";
+const avatarStyle = { bgcolor: red[50], width: "5px", height: "5px" };
+const TaskStatus = ({ status }: { status: string }) => {
   return (
     <Container maxWidth="sm">
       <Grid
@@ -13,16 +12,22 @@ const TaskStatus = () => {
       >
         <Grid item>
           <Chip
-            avatar={<Avatar sx={{ bgcolor: "white" }}>^</Avatar>}
-            label="Critical"
-            sx={{ bgcolor: "white", fontSize: "16px", color: "red" }}
+            avatar={<Avatar sx={avatarStyle}>^</Avatar>}
+            label={status}
+            sx={{
+              bgcolor: "white",
+              fontSize: "16px",
+              color: "red",
+              height: "20px",
+              fontWeight: "normal",
+            }}
           ></Chip>
         </Grid>
         <Grid item>
           <Chip
             label="New"
             sx={{
-              bgcolor: "lightgreen",
+              bgcolor: green[300],
               padding: "0",
               height: "20px",
               color: "white",
